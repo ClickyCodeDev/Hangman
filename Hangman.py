@@ -17,10 +17,10 @@ while True:
     i = 0
     print(currentword)
     ask = input("Guess a letter: \n")
-    if ask in word:
+    if ask.lower() in word:
         for e in word:
-            if ask == e:
-                currentword[i] = ask
+            if ask.lower() == e:
+                currentword[i] = ask.lower()
             i += 1
     else:
         print("Wrong!")
